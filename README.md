@@ -14,11 +14,6 @@
 - [📜 Descrição do Projeto](#-descrição-do-projeto)
 - [📌 Status do Projeto](#-status-do-projeto)
 - [✨ Funcionalidades](#-funcionalidades-e-demostração-da-aplicação)
-- [🛠 Tecnologias Utilizadas](#-tecnologias-utilizadas)
-- [🤝 Pessoas Contribuidoras](#-pessoas-contribuidoras)
-- [👨‍💻 Pessoas Desenvolvedoras do Projeto](#-pessoas-desenvolvedoras-do-projeto)
-- [📄 Licença](#-licença)
-- [✅ Conclusão](#-conclusão)
 
 ---
 
