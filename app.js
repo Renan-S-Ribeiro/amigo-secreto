@@ -1,6 +1,3 @@
-//O principal objetivo deste desafio é fortalecer suas habilidades em lógica de programação. Aqui você deverá desenvolver a lógica para resolver o problema.
-
-// Lista para armazenar os nomes
 const amigos = [];
 
 function adicionarAmigo() {
@@ -12,9 +9,7 @@ function adicionarAmigo() {
         return;
     }
 
-    // Verifica se o nome já foi adicionado (sem diferenciar maiúsculas/minúsculas)
     const nomeJaExiste = amigos.some(amigo => amigo.toLowerCase() === nome.toLowerCase());
-
     if (nomeJaExiste) {
         alert('Este nome já foi adicionado!');
         input.value = '';
@@ -25,7 +20,6 @@ function adicionarAmigo() {
     input.value = '';
     atualizarLista();
 }
-
 
 function atualizarLista() {
     const lista = document.getElementById('listaAmigos');
@@ -52,4 +46,14 @@ function sortearAmigo() {
     const li = document.createElement('li');
     li.textContent = `Amigo sorteado: ${sorteado}`;
     resultado.appendChild(li);
+}
+
+function resetarLista() {
+    const confirmar = confirm('Tem certeza que deseja resetar a lista e o sorteio?');
+
+    if (!confirmar) return;
+
+    amigos.length = 0;
+    document.getElementById('listaAmigos').innerHTML = '';
+    document.getElementById('resultado').innerHTML = '';
 }
