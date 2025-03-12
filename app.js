@@ -12,10 +12,20 @@ function adicionarAmigo() {
         return;
     }
 
+    // Verifica se o nome já foi adicionado (sem diferenciar maiúsculas/minúsculas)
+    const nomeJaExiste = amigos.some(amigo => amigo.toLowerCase() === nome.toLowerCase());
+
+    if (nomeJaExiste) {
+        alert('Este nome já foi adicionado!');
+        input.value = '';
+        return;
+    }
+
     amigos.push(nome);
-    input.value = ''; // Limpa o campo de input
-    atualizarLista(); // Atualiza a exibição da lista
+    input.value = '';
+    atualizarLista();
 }
+
 
 function atualizarLista() {
     const lista = document.getElementById('listaAmigos');
